@@ -19,8 +19,8 @@
           <input id="main-header_search" type="search" placeholder="Поиск:">
         </form>
         <ul>
-          <li><a href="#">Закладки</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li><a href="#">Закладки: 0</a></li>
+          <li><a href="#">Корзина: 0</a></li>
           <li><a href="#">Оформить заказ</a></li>
         </ul>
       </div>
@@ -108,28 +108,36 @@
         <a href="#">Все популярные товары</a>
         <ul>
           <li>
-            <h3>Перфоратор BOSCH BFG 9000</h3>
-            <img src="https://via.placeholder.com/184x164" alt="" width="184" height="164">
-            <p>32500 Р.</p>
-            <a href="#">25500 Р.</a>
+            <a href="#">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <img src="https://via.placeholder.com/184x164" alt="" width="184" height="164">
+              <p>32500 Р.</p>
+              <p>25500 Р.</p>
+            </a>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 3000</h3>
-            <img src="https://via.placeholder.com/127x112" alt="" width="127" height="112">
-            <p>22500 Р.</p>
-            <a href="#">15500 Р.</a>
+            <a href="#">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <img src="https://via.placeholder.com/127x112" alt="" width="127" height="112">
+              <p>22500 Р.</p>
+              <p>15500 Р.</p>
+            </a>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <img src="https://via.placeholder.com/144x128" alt="" width="144" height="128">
-            <p>30500 Р.</p>
-            <a href="#">25500 Р.</a>
+            <a href="#">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <img src="https://via.placeholder.com/144x128" alt="" width="144" height="128">
+              <p>30500 Р.</p>
+              <p>25500 Р.</p>
+            </a>
           </li>
           <li>
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-            <img src="https://via.placeholder.com/127x112" alt="" width="127" height="112">
-            <p>22500 Р.</p>
-            <a href="#">12500 Р.</a>
+            <a href="#">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <img src="https://via.placeholder.com/127x112" alt="" width="127" height="112">
+              <p>22500 Р.</p>
+              <p>12500 Р.</p>
+            </a>
           </li>
         </ul>
       </section>
@@ -260,11 +268,11 @@
       <h2>Форма обратной связи</h2>
       <form class="popup-form" action="#" method="get">
         <label for="popup-form_name">Ваше имя:</label>
-        <input id="popup-form_name" type="text" placeholder="Имя Фамилия">
+        <input id="popup-form_name" name="popup-form_name" type="text" placeholder="Имя Фамилия">
         <label for="popup-form_email">Ваш e-mail:</label>
-        <input id="popup-form_email" type="email" placeholder="email@example.com">
+        <input id="popup-form_email" name="popup-form_email" type="email" placeholder="email@example.com">
         <label for="popup-form_message">Текст письма:</label>
-        <textarea id="popup-form_message">В свободной форме</textarea>
+        <textarea id="popup-form_message" name="popup-form_message">В свободной форме</textarea>
         <input type="submit" value="Отправить">
       </form>
       <button type="button">Закрыть</button>
