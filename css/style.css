@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "Cuprum";
+  src:
+    url(../fonts/cuprum.woff2) format("woff2"),
+    url(../fonts/cuprum.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src:
+    url(../fonts/cuprumbold.woff2) format("woff2"),
+    url(../fonts/cuprumbold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src:
+    url(../fonts/cuprumitalic.woff2) format("woff2"),
+    url(../fonts/cuprumitalic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src:
+    url(../fonts/cuprumbolditalic.woff2) format("woff2"),
+    url(../fonts/cuprumbolditalic.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url(../fonts/ptsans.woff2) format("woff2"),
+    url(../fonts/ptsans.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url(../fonts/ptsansbold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --basic-green: #63A63E;
+  --basic-red: #EE3643;
+  --basic-grey: #32425C;
+  --basic-lightgrey: #C5C5C5;
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+
+  --bright-green: #5FBB2D;
+  --dark-red: #CA2C37;
+  --darker-red: #BA2732;
+  --dark-grey: #293449;
+  --darker-grey: #1D2739;
+  --transp-03-white: rgba(255, 255, 255, 0.3);
+  --transp-03-lightgrey: rgba(197, 197, 197, 0.3);
+  --transp-06-lightgrey: rgba(197, 197, 197, 0.6);
+
+  --background-yellow: #F7F3EC;
+  --background-cyan: #F1F5F7;
+
+  --special-yellow: #FFBF47;
+  --special-cyan: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-green: #8ED78F;
+}
+
+/* Global */
+
+body {
+  min-width: 940px;
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  padding: 10px 20px;
+}
+
+/* Header - Main & Top */
+
+.main-header {
+  background-color: var(--background-cyan);
+}
+
+.header-top {
+  background-color: var(--dark-grey);
+}
+
+.header-top__logo {
+  background-color: var(--basic-red);
+}
+
+.header-top__search input {
+  font: inherit;
+  color: var(--basic-white);
+  background-color: transparent;
+  border: none;
+}
+
+.header-top__user-menu,
+.navigation__list {
+  list-style: none;
+  padding: 0;
+}
+
+.header-top__user-menu a,
+.navigation__list a {
+  font: inherit;
+  color: var(--basic-white);
+}
+
+/* Header - Middle */
+
+.header-middle__subtitle {
+  color: var(--basic-red);
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.header-middle__tel {
+  color: var(--basic-red);
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.header-middle__address {
+  color: var(--basic-grey);
+  font-size: 14px;
+}
+
+.header-middle__login,
+.header-middle__registration {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/* Header - Bottom/Navigation */
+
+.navigation {
+  background-color: var(--basic-grey);
+}
+
+/* Promo */
+
+.promo {
+  color: var(--basic-white);
+}
+
+.promo h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.promo-slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.promo__list,
+.promo-slider__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promo__item,
+.promo-slider__item {
+  background-color: var(--basic-grey);
+  padding: 20px; /* поставил рандомно для наглядности */
+}
+
+.promo__item .button {
+  background-color: var(--transp-03-white);
+}
+
+.promo__item_yellow {
+  background-color: var(--special-yellow);
+}
+
+.promo__item_cyan {
+  background-color: var(--special-cyan);
+}
+
+.promo__item_lilac {
+  background-color: var(--special-lilac);
+}
+
+.promo__item_green {
+  background-color: var(--special-green);
+}
+
+.promo-slider__item_drills {
+  background-image: url(../img/slider-drills.jpg);
+}
+
+.promo-slider__item_perfs {
+  background-image: url(../img/slider-perforators.jpg);
+}
+
+.promo-slider__item_drills,
+.promo-slider__item_perfs {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Popular products */
+
+.popular__header-wraper {
+  background-color: var(--background-yellow);
+  padding: 30px;
+}
+
+.popular__header-wraper h2 {
+  margin: 0;
+}
+
+.products {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.products__card {
+  background-color: var(--basic-white);
+  border: 1px solid var(--transp-06-lightgrey);
+}
+
+.products__card h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.products__price,
+.products__old-price{
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.products__old-price {
+  color: var(--basic-lightgrey);
+  text-decoration: line-through;
+}
+
+.products__buy-button,
+.products__bookmark-button {
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  border: 3px solid var(--basic-green);
+  border-radius: 2px;
+  background-color: var(--basic-green);
+  color: var(--basic-white);
+}
+
+.products__bookmark-button {
+  background-color: transparent;
+  color: var(--basic-grey);
+}
