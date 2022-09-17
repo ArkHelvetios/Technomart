@@ -112,11 +112,11 @@
       </div>
 
       <section class="popular">
-        <div class="popular__header-wraper">
+        <div class="popular__header-wrapper">
           <h2>Популярные товары:</h2>
           <a class="button" href="#">Все популярные товары</a>
         </div>
-        
+
         <ul class="products">
           <li class="products__card">
             <h3>Перфоратор BOSCH BFG 9000</h3>
@@ -162,7 +162,7 @@
       </section>
 
       <section class="brands">
-        <div class="brands__header-wraper">
+        <div class="brands__header-wrapper">
           <h2>Популярные производители:</h2>
           <a class="button" href="#">Все производители</a>
         </div>
@@ -180,23 +180,23 @@
 
       <section class="services">
         <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
+        <p class="services__slogan">Хороший интернет-магазин отличается от плохого не только ценами! <br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <div class="services__wraper">
-          <ul class="services__buttons">
-            <li><a class="button services__button" href="#">Доставка</a></li>
-            <li><a class="button services__button" href="#">Гарантия</a></li>
-            <li><a class="button services__button" href="#">Кредит</a></li>
+        <div class="tabs">
+          <ul class="tabs__controls">
+            <li><a class="tabs__button" href="#">Доставка</a></li>
+            <li><a class="tabs__button" href="#">Гарантия</a></li>
+            <li><a class="tabs__button" href="#">Кредит</a></li>
           </ul>
-          <ul class="services__tabs">
-            <li>
+          <ul class="tabs__content">
+            <li class="tabs__item">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо <br>
                 к вашему подъезду совершенно бесплатно! <br>
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
             </li>
-            <li>
+            <li class="tabs__item">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, <br>
                 а также в случае пожара, спровоцированного его <br>
@@ -204,7 +204,7 @@
                 гарантии. Мы обменяем сгоревший товар на новый. <br>
                 Дом уж восстановите как-нибудь сами.</p>
             </li>
-            <li>
+            <li class="tabs__item">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! <br>
                 Кредитные консультанты придут вам на помощь.</p>
@@ -214,30 +214,32 @@
         </div>
       </section>
 
-      <section class="about-company">
-        <h2>Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
-          ремонта и строительства не оставит равнодушными любителей сэкономить на <br>
-          гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
-          Техномарт работает со многими транспортными компаниями:</p>
-        <ul class="partners">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="#">Подробнее о компании</a>
-      </section>
+      <div class="about-contacts">
+        <section class="about-company">
+          <h2>Компания «Техномарт»</h2>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
+            ремонта и строительства не оставит равнодушными любителей сэкономить на <br>
+            гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+            Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="about-company__partners">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="#">Подробнее о компании</a>
+        </section>
 
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, <br>
-          заехав в наш офис:</p>
-        <a href="#">
-          <img src="img/map.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="300" height="158">
-        </a>
-        <p><a class="button" href="#">Заблудились? Напишите нам!</a></p>
-      </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, <br>
+            заехав в наш офис:</p>
+          <a href="#">
+            <img src="img/map.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="300" height="158">
+          </a>
+          <a class="button" href="#">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
 
     </main>
 
@@ -259,9 +261,9 @@
       <div class="footer-middle">
         <address class="footer-middle__contacts">
           <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-          <a href="tel:+78005558628">+7 800 555-86-28</a> 
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
         </address>
-        <ul class="footer-categoties">
+        <ul class="footer-middle__categoties-menu">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>
@@ -271,7 +273,7 @@
 
       <div class="footer-bottom">
         <p class="footer-bottom__copyright">© 2010–2021 Компания «Техномарт» <br>
-          Все права защищены          
+          Все права защищены
         </p>
         <ul class="footer-bottom__social-buttons">
           <li><a class="social-button" href="#">VK</a></li>
@@ -289,22 +291,22 @@
       </div>
     </footer>
 
-    <section class="popup callback">
-      <h2>Форма обратной связи</h2>
-      <form class="popup-form" action="#" method="get">
-        <label for="popup-form_name">Ваше имя:</label>
-        <input id="popup-form_name" name="popup-form_name" type="text" placeholder="Имя Фамилия">
-        <label for="popup-form_email">Ваш e-mail:</label>
-        <input id="popup-form_email" name="popup-form_email" type="email" placeholder="email@example.com">
-        <label for="popup-form_message">Текст письма:</label>
-        <textarea id="popup-form_message" name="popup-form_message">В свободной форме</textarea>
+    <section class="popup popup-form">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="popup-form__wrapper" action="#" method="get">
+        <label for="popup-form__name">Ваше имя:</label>
+        <input id="popup-form__name" name="popup-form_name" type="text" placeholder="Имя Фамилия">
+        <label for="popup-form__email">Ваш e-mail:</label>
+        <input id="popup-form__email" name="popup-form_email" type="email" placeholder="email@example.com">
+        <label for="popup-form__message">Текст письма:</label>
+        <textarea id="popup-form__message" name="popup-form_message" placeholder="В свободной форме"></textarea>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="close-button" type="button">Закрыть</button>
     </section>
 
     <section class="popup interactive-map">
-      <h2>Как до нас добраться</h2>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <!-- Здесь будет карта -->
       <button class="close-button" type="button">Закрыть</button>
     </section>

@@ -84,7 +84,7 @@
   --special-green: #8ED78F;
 }
 
-/* Global */
+/* GLOBAL */
 
 body {
   min-width: 940px;
@@ -132,10 +132,11 @@ img {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding: 10px 20px;
+  border: none;
+  /* padding: 10px 20px; */
 }
 
-/* Header - Main & Top */
+/* HEADER - Main & Top */
 
 .main-header {
   background-color: var(--background-cyan);
@@ -168,7 +169,7 @@ img {
   color: var(--basic-white);
 }
 
-/* Header - Middle */
+/* HEADER - Middle */
 
 .header-middle__subtitle {
   color: var(--basic-red);
@@ -197,13 +198,13 @@ img {
   line-height: 21px;
 }
 
-/* Header - Bottom/Navigation */
+/* HEADER - Bottom/Navigation */
 
 .navigation {
   background-color: var(--basic-grey);
 }
 
-/* Promo */
+/* PROMO SECTION */
 
 .promo {
   color: var(--basic-white);
@@ -271,16 +272,20 @@ img {
   background-position: 50% 50%;
 }
 
-/* Popular products */
+/* POPULAR & BRANDS SECTION HEADER */
 
-.popular__header-wraper {
+.popular__header-wrapper,
+.brands__header-wrapper {
   background-color: var(--background-yellow);
   padding: 30px;
 }
 
-.popular__header-wraper h2 {
+.popular__header-wrapper h2,
+.brands__header-wrapper h2 {
   margin: 0;
 }
+
+/* POPULAR PRODUCTS */
 
 .products {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
@@ -325,4 +330,106 @@ img {
 .products__bookmark-button {
   background-color: transparent;
   color: var(--basic-grey);
+}
+
+/* BRANDS */
+
+.brands__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* SERVICES */
+
+.services {
+  background-color: var(--background-cyan);
+}
+
+/* TEXT P FOR NEXT BLOCKS */
+
+.services__slogan,
+.tabs__item p,
+.about-contacts p {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+/* TABS */
+
+.tabs__controls,
+.tabs__content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs__button {
+  background-color: var(--basic-grey);
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.tabs__item h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* ABOUT COMPANY */
+
+.about-company__partners {
+  list-style: none;
+}
+
+/* CONTACTS */
+
+
+/* FOOTER */
+
+.main-footer {
+  background-color: var(--basic-grey);
+  color: var(--basic-white);
+}
+
+.footer-top__logo {
+  background-color: var(--basic-red);
+}
+
+.footer-bottom {
+  background-color: var(--dark-grey);
+}
+
+.footer-top__navigation,
+.footer-middle__categoties-menu,
+.footer-bottom__social-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top__navigation a,
+.footer-middle__contacts a,
+.footer-bottom__social-buttons a {
+  color: inherit;
+}
+
+.footer-middle__categoties-menu a,
+.footer-bottom__dev-info a {
+  color: var(--special-yellow);
+}
+
+/* POPUP FORM */
+
+.popup-form__wrapper input,
+.popup-form__wrapper textarea {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  border: 2px solid var(--basic-lightgrey);
+  border-radius: 2px;
 }
