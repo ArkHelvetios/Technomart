@@ -67,13 +67,17 @@
   --basic-black: #000000;
 
   --bright-green: #5FBB2D;
+  --dark-green: #518534;
+  --darker-green: #367315;
   --dark-red: #CA2C37;
   --darker-red: #BA2732;
   --dark-grey: #293449;
   --darker-grey: #1D2739;
   --transp-03-white: rgba(255, 255, 255, 0.3);
+  --transp-05-white: rgba(255, 255, 255, 0.5);
   --transp-03-lightgrey: rgba(197, 197, 197, 0.3);
   --transp-06-lightgrey: rgba(197, 197, 197, 0.6);
+  --shadow-015-black: rgba(0, 0, 0, 0.15);
 
   --background-yellow: #F7F3EC;
   --background-cyan: #F1F5F7;
@@ -138,6 +142,14 @@ img {
   /* padding: 10px 20px; */
 }
 
+.button:hover {
+  background-color: var(--dark-red);
+}
+
+.button:active {
+  background-color: var(--darker-red);
+}
+
 .secondary-button {
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -163,7 +175,20 @@ img {
 }
 
 .header-top__logo {
+  display: flex;
+  max-width: 220px;
+  height: 42px;
   background-color: var(--basic-red);
+  box-shadow: 0px 5px 0px var(--darker-red);
+  cursor: pointer;
+}
+
+.header-top__logo img {
+  margin: auto;
+}
+
+.header-top__logo:active {
+  background-color: var(--dark-red);
 }
 
 .header-top__search input {
@@ -173,6 +198,13 @@ img {
   border: none;
 }
 
+.header-top__search input:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: none;
+  outline: none;
+}
+
 .header-top__user-menu {
   list-style: none;
 }
@@ -180,6 +212,23 @@ img {
 .header-top__user-menu a {
   font: inherit;
   color: var(--basic-white);
+}
+
+.header-top__user-menu a:active {
+  background-color: var(--darker-grey);
+}
+
+.header-top__order {
+  background-color: var(--basic-green);
+}
+
+.header-top__order:hover {
+  background-color: var(--bright-green);
+}
+
+a.header-top__order:active {
+  color: var(--transp-05-white);
+  background-color: var(--basic-green);
 }
 
 /* HEADER - Middle */
@@ -196,6 +245,7 @@ img {
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
+  border: 3px solid var(--basic-white);
 }
 
 .header-middle__address {
@@ -210,6 +260,14 @@ img {
   line-height: 21px;
 }
 
+.header-middle__profile-button:hover {
+  color: var(--basic-red);
+}
+
+.header-middle__profile-button:active {
+  color: var(--basic-lightgrey);
+}
+
 .header-middle__profile-submenu {
   list-style: none;
 }
@@ -220,10 +278,19 @@ img {
   line-height: 18px;
 }
 
+.header-middle__profile-submenu a:hover {
+  color: var(--basic-red);
+}
+
+.header-middle__profile-submenu a:active {
+  color: var(--basic-lightgrey);
+}
+
 /* HEADER - Bottom/Navigation */
 
 .navigation {
   background-color: var(--basic-grey);
+  box-shadow: 0px 5px 0px var(--dark-grey);
 }
 
 .navigation__list {
@@ -233,6 +300,15 @@ img {
 .navigation__list a {
   font: inherit;
   color: var(--basic-white);
+}
+
+.navigation__list a:hover {
+  background-color: var(--dark-grey);
+}
+
+.navigation__list a:active {
+  color: var(--transp-05-white);
+  background-color: var(--darker-grey);
 }
 
 /*
@@ -266,8 +342,16 @@ img {
   list-style: none;
 }
 
-.promo__item .button {
+.promo__button {
   background-color: var(--transp-03-white);
+}
+
+.promo__button:hover {
+  background-color: var(--transp-03-lightgrey);
+}
+
+.promo__button:active {
+  background-color: var(--transp-06-lightgrey);
 }
 
 .promo__item_yellow {
@@ -323,6 +407,10 @@ img {
   border: 1px solid var(--transp-06-lightgrey);
 }
 
+.products__card:hover {
+  box-shadow: 0px 4px 20px var(--shadow-015-black);
+}
+
 .products__card h3 {
   font-size: 18px;
   line-height: 20px;
@@ -342,16 +430,41 @@ img {
 .products__buy-button,
 .products__bookmark-button {
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
   border: 3px solid var(--basic-green);
   border-radius: 2px;
   background-color: var(--basic-green);
   color: var(--basic-white);
 }
 
+.products__buy-button {
+  border-bottom: none;
+  box-shadow: 0px 3px 0px var(--darker-green);
+}
+
+.products__buy-button:hover {
+  background-color: var(--bright-green);
+  border-color: var(--bright-green);
+}
+
+.products__buy-button:active {
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
+}
+
 .products__bookmark-button {
   background-color: transparent;
   color: var(--basic-grey);
+}
+
+.products__bookmark-button:hover {
+  background-color: transparent;
+  border-color: var(--basic-grey);
+}
+
+.products__bookmark-button:active {
+  background-color: inherit;
+  border-color: inherit;
+  opacity: 0.5;
 }
 
 /* BRANDS */
@@ -362,6 +475,18 @@ img {
 
 .brands__list {
   list-style: none;
+}
+
+.brands__list img {
+  display: block;
+}
+
+.brands__list img:hover {
+  box-shadow: 0px 4px 20px var(--shadow-015-black);
+}
+
+.brands__list img:active {
+  opacity: 0.5;
 }
 
 /* SERVICES */
