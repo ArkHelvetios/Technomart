@@ -159,9 +159,24 @@ img {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
   color: var(--basic-black);
   background-color: transparent;
   border: 1px solid var(--transp-06-lightgrey);
+}
+
+.outline-button:hover {
+  border-color: var(--basic-lightgrey);
+}
+
+.outline-button:active {
+  border-color: var(--basic-red);
+}
+
+.outline-button:not([href]) {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border-color: var(--basic-red);
 }
 
 /* HEADER - Main & Top */
@@ -514,6 +529,15 @@ a.header-top__order:active {
   font-weight: 700;
 }
 
+.tabs__controls a:hover {
+  background-color: var(--dark-grey);
+}
+
+.tabs__controls a:active {
+  color: var(--basic-grey);
+  background-color: var(--basic-white);
+}
+
 .tabs__item h3 {
   font-size: 30px;
   line-height: 30px;
@@ -625,6 +649,12 @@ a.header-top__order:active {
   text-decoration: underline dotted var(--basic-red);
 }
 
+.sorting a:hover {
+  color: var(--basic-black);
+  text-decoration: underline solid var(--basic-red);
+}
+
+.sorting a:active,
 .sorting a:not([href]) {
   color: var(--basic-red);
   text-decoration: none;
@@ -668,7 +698,20 @@ a.header-top__order:active {
 }
 
 .footer-top__logo {
+  display: flex;
+  max-width: 220px;
+  height: 62px;
   background-color: var(--basic-red);
+  box-shadow: 0px 5px 0px var(--darker-red);
+  cursor: pointer;
+}
+
+.footer-top__logo:active {
+  background-color: var(--dark-red);
+}
+
+.footer-top__logo img {
+  margin: auto;
 }
 
 .footer-bottom {
@@ -678,6 +721,30 @@ a.header-top__order:active {
 .footer-middle__categoties-menu a,
 .footer-bottom__dev-info a {
   color: var(--special-yellow);
+}
+
+.footer-top__navigation a:hover,
+.footer-middle__categoties-menu a:hover,
+.footer-bottom__dev-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-top__navigation a:active,
+.footer-middle__categoties-menu a:active {
+  opacity: 0.5;
+}
+
+.footer-bottom__dev-info a:active {
+  color: var(--basic-red);
+}
+
+.footer-bottom__social-buttons a {
+  background-color: var(--darker-grey);
+}
+
+.footer-bottom__social-buttons a:hover,
+.footer-bottom__social-buttons a:active {
+  background-color: var(--basic-red);
 }
 
 /* POPUP FORM */
