@@ -18,22 +18,24 @@
     <header class="main-header">
 
       <div class="header-top">
-        <a class="header-top__logo">
-          <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="108" height="18">
-        </a>
-        <form class="header-top__search" action="#" method="get">
-          <label class="visually-hidden" for="header-top__search">Поиск по сайту</label>
-          <input id="header-top__search" type="search" placeholder="Поиск:">
-        </form>
-        <ul class="header-top__user-menu">
-          <li><a class="header-top__bookmarks" href="#">Закладки: 0</a></li>
-          <li><a class="header-top__cart" href="#">Корзина: 0</a></li>
-          <li><a class="header-top__order" href="#">Оформить заказ</a></li>
-        </ul>
+        <div class="header-top__wrapper container">
+          <a class="header-top__logo">
+            <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="108" height="18">
+          </a>
+          <form class="header-top__search" action="#" method="get">
+            <label class="visually-hidden" for="header-top__search">Поиск по сайту</label>
+            <input id="header-top__search" type="search" placeholder="Поиск:">
+          </form>
+          <ul class="header-top__user-menu">
+            <li><a class="header-top__bookmarks" href="#">Закладки: 0</a></li>
+            <li><a class="header-top__cart" href="#">Корзина: 0</a></li>
+            <li><a class="header-top__order" href="#">Оформить заказ</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="header-middle">
-        <p class="header-middle__subtitle">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <div class="header-middle container">
+        <p class="header-middle__subtitle">Интернет-магазин <br> строительных материалов и инструментов для ремонта</p>
         <div class="header-middle__contacts">
           <a class="header-middle__tel" href="tel:+78005558628">+7 800 555-86-28</a>
           <p class="header-middle__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
@@ -44,7 +46,7 @@
         </div>
       </div>
 
-      <nav class="navigation">
+      <nav class="navigation container">
         <ul class="navigation__list">
           <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -61,57 +63,47 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта «Техномарт»</h1>
 
-      <div class="promo">
-        <section class="categoties">
-          <h2 class="visually-hidden">Категории товаров</h2>
-          <ul class="promo__list">
-            <li class="promo__item promo__item_yellow">
-              <h3>Материалы</h3>
-              <a class="button promo__button" href="#">На любой вкус</a>
-            </li>
-            <li class="promo__item promo__item_cyan">
-              <h3>Инструмент</h3>
-              <a class="button promo__button" href="#">На все случаи</a>
-            </li>
-            <li class="promo__item promo__item_lilac">
-              <h3>Техника</h3>
-              <a class="button promo__button" href="#">Для стройки</a>
-            </li>
-          </ul>
-        </section>
+      <section class="promo container">
+        <h2 class="visually-hidden">Что мы предлагаем</h2>
+        <ul class="promo__list">
+          <li class="promo__item promo__item_yellow">
+            <h3>Материалы</h3>
+            <a class="button promo__button" href="#">На любой вкус</a>
+          </li>
+          <li class="promo__item promo__item_cyan">
+            <h3>Инструмент</h3>
+            <a class="button promo__button" href="#">На все случаи</a>
+          </li>
+          <li class="promo__item promo__item_lilac">
+            <h3>Техника</h3>
+            <a class="button promo__button" href="#">Для стройки</a>
+          </li>
+          <li class="promo__item promo__item_big">
+            <ul class="promo-slider">
+              <li class="promo-slider__item promo-slider__item_drills">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a class="button" href="#">Открыть каталог</a>
+              </li>
+              <li class="promo-slider__item promo-slider__item_perfs">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <a class="button" href="#">Открыть каталог</a>
+              </li>
+            </ul>
+          </li>
+          <li class="promo__item promo__item_green">
+            <h3>Скидки 50%</h3>
+            <a class="button promo__button" href="#">На 350 ТОВАРОВ</a>
+          </li>
+          <li class="promo__item promo__item_yellow">
+            <h3>Доставка</h3>
+            <a class="button promo__button" href="#">Бесплатно</a>
+          </li>
+        </ul>
+      </section>
 
-        <section class="promo-slider">
-          <h2 class="visually-hidden">Промо-категории</h2>
-          <ul class="promo-slider__list">
-            <li class="promo-slider__item promo-slider__item_drills">
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
-              <a class="button" href="#">Открыть каталог</a>
-            </li>
-            <li class="promo-slider__item promo-slider__item_perfs">
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-              <a class="button" href="#">Открыть каталог</a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="features">
-          <h2 class="visually-hidden">Акции</h2>
-          <ul class="promo__list">
-            <li class="promo__item promo__item_green">
-              <h3>Скидки 50%</h3>
-              <a class="button promo__button" href="#">На 350 ТОВАРОВ</a>
-            </li>
-            <li class="promo__item promo__item_yellow">
-              <h3>Доставка</h3>
-              <a class="button promo__button" href="#">Бесплатно</a>
-            </li>
-          </ul>
-        </section>
-      </div>
-
-      <section class="popular">
+      <section class="popular container">
         <div class="popular__header-wrapper">
           <h2>Популярные товары:</h2>
           <a class="button" href="#">Все популярные товары</a>
@@ -161,7 +153,7 @@
         </ul>
       </section>
 
-      <section class="brands">
+      <section class="brands container">
         <div class="brands__header-wrapper">
           <h2>Популярные производители:</h2>
           <a class="button" href="#">Все производители</a>
@@ -179,42 +171,44 @@
       </section>
 
       <section class="services">
-        <h2>Сервисы</h2>
-        <p class="services__slogan">Хороший интернет-магазин отличается от плохого не только ценами! <br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <div class="tabs">
-          <ul class="tabs__controls">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
-          </ul>
-          <ul class="tabs__content">
-            <li class="tabs__item">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо <br>
-                к вашему подъезду совершенно бесплатно! <br>
-                Ведь мы неплохо заработаем,<br>
-                поднимая его на ваш этаж!</p>
-            </li>
-            <li class="tabs__item">
-              <h3>Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит, <br>
-                а также в случае пожара, спровоцированного его <br>
-                возгоранием,вы всегда можете быть уверены в нашей <br>
-                гарантии. Мы обменяем сгоревший товар на новый. <br>
-                Дом уж восстановите как-нибудь сами.</p>
-            </li>
-            <li class="tabs__item">
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! <br>
-                Кредитные консультанты придут вам на помощь.</p>
-                <a class="button" href="#">Отправить Заявку</a>
-            </li>
-          </ul>
+        <div class="container">
+          <h2>Сервисы</h2>
+          <p class="services__slogan">Хороший интернет-магазин отличается от плохого не только ценами! <br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="tabs">
+            <ul class="tabs__controls">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
+            </ul>
+            <ul class="tabs__content">
+              <li class="tabs__item">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо <br>
+                  к вашему подъезду совершенно бесплатно! <br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!</p>
+              </li>
+              <li class="tabs__item">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит, <br>
+                  а также в случае пожара, спровоцированного его <br>
+                  возгоранием,вы всегда можете быть уверены в нашей <br>
+                  гарантии. Мы обменяем сгоревший товар на новый. <br>
+                  Дом уж восстановите как-нибудь сами.</p>
+              </li>
+              <li class="tabs__item">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! <br>
+                  Кредитные консультанты придут вам на помощь.</p>
+                  <a class="button" href="#">Отправить Заявку</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <div class="about-contacts">
+      <div class="about-contacts container">
         <section class="about-company">
           <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
@@ -245,7 +239,7 @@
 
     <footer class="main-footer">
 
-      <div class="footer-top">
+      <div class="footer-top container">
         <a class="footer-top__logo">
           <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="138" height="23">
         </a>
@@ -258,7 +252,7 @@
         </ul>
       </div>
 
-      <div class="footer-middle">
+      <div class="footer-middle container">
         <address class="footer-middle__contacts">
           <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
           <a href="tel:+78005558628">+7 800 555-86-28</a>
@@ -272,21 +266,23 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-bottom__copyright">© 2010–2021 Компания «Техномарт» <br>
-          Все права защищены
-        </p>
-        <ul class="footer-bottom__social-buttons">
-          <li><a href="#">VK</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-        <div class="footer-bottom__dev-info">
-          <p>Обратная связь: <br>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="footer-bottom__wrapper container">
+          <p class="footer-bottom__copyright">© 2010–2021 Компания «Техномарт» <br>
+            Все права защищены
           </p>
-          <p>Разработано — <br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+          <ul class="footer-bottom__social-buttons">
+            <li><a href="#">VK</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+          <div class="footer-bottom__dev-info">
+            <p>Обратная связь: <br>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p>Разработано — <br>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
