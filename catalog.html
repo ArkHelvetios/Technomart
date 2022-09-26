@@ -22,9 +22,12 @@
           <a class="header-top__logo" href="index.html">
             <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="108" height="18">
           </a>
-          <form class="header-top__search" action="#" method="get">
-            <label class="visually-hidden" for="header-top__search">Поиск по сайту</label>
-            <input id="header-top__search" type="search" placeholder="Поиск:">
+          <form class="header-top__search-wrapper" action="#" method="get">
+            <label class="visually-hidden" for="header-top__search">Поиск по сайту:</label>
+            <input class="header-top__search-input" id="header-top__search" type="search" placeholder="Поиск:">
+            <svg class="header-top__search-icon" for="header-top__search" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04 17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 1 1 1.41-1.41ZM7.5 2a5.5 5.5 0 1 0 .01 11.01A5.5 5.5 0 0 0 7.5 2Z" fill="#fff"/>
+            </svg>
           </form>
           <ul class="header-top__user-menu">
             <li><a class="header-top__bookmarks" href="#">Закладки: 0</a></li>
@@ -40,10 +43,23 @@
           <a class="header-middle__tel" href="tel:+78005558628">+7 800 555-86-28</a>
           <address class="header-middle__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
         </div>
-        <div class="header-middle__profile-menu">
-          <a class="header-middle__profile-button" href="#">Равшан Джамшутович</a>
-          <a class="header-middle__profile-button" href="#">Выйти</a>
-          <ul class="header-middle__profile-submenu">
+        <div class="header-middle__profile-menu profile-menu__wrapper">
+          <div class="profile-menu__main">
+            <a class="profile-menu__button profile-menu__button_user" href="#">
+              <svg class="profile-menu__icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 0 0 1.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83Z" fill="#C5C5C5"/>
+              </svg>
+              <span>Равшан Джамшутович</span>
+            </a>
+            <a class="profile-menu__button profile-menu__button_logout" href="#">
+              <svg class="profile-menu__icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 8.5 11.12 0v6h-6v5h6v6L20 8.5Z" fill="#C5C5C5"/>
+                <path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06Z" fill="#C5C5C5"/>
+              </svg>
+              <span class="visually-hidden">Выйти</span>
+            </a>
+          </div>
+          <ul class="profile-menu__submenu">
             <li><a href="#">Мои заказы</a></li>
             <li><a href="#">Личный кабинет</a></li>
           </ul>

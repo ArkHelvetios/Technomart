@@ -22,9 +22,12 @@
           <a class="header-top__logo">
             <img src="img/logo.svg" alt="Логотип интернет-магазина «Техномарт»" width="108" height="18">
           </a>
-          <form class="header-top__search" action="#" method="get">
-            <label class="visually-hidden" for="header-top__search">Поиск по сайту</label>
-            <input id="header-top__search" type="search" placeholder="Поиск:">
+          <form class="header-top__search-wrapper" action="#" method="get">
+            <label class="visually-hidden" for="header-top__search">Поиск по сайту:</label>
+            <input class="header-top__search-input" id="header-top__search" type="search" placeholder="Поиск:">
+            <svg class="header-top__search-icon" for="header-top__search" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04 17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 1 1 1.41-1.41ZM7.5 2a5.5 5.5 0 1 0 .01 11.01A5.5 5.5 0 0 0 7.5 2Z" fill="#fff"/>
+            </svg>
           </form>
           <ul class="header-top__user-menu">
             <li><a class="header-top__bookmarks" href="#">Закладки: 0</a></li>
@@ -40,9 +43,17 @@
           <a class="header-middle__tel" href="tel:+78005558628">+7 800 555-86-28</a>
           <address class="header-middle__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
         </div>
-        <div class="header-middle__profile-menu">
-          <a class="header-middle__profile-button" href="#">Войти</a>
-          <a class="header-middle__profile-button" href="#">Регистрация</a>
+        <div class="header-middle__profile-menu profile-menu__wrapper">
+          <div class="profile-menu__main">
+            <a class="profile-menu__button profile-menu__button_login" href="#">
+              <svg class="profile-menu__icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.17 8.5 5.7 0v6H0v5h5.71v6l8.46-8.5Z" fill="#C5C5C5"/>
+                <path d="M16.18 15.01h-4.79V17h4.79c2.07 0 2.86-1.81 2.88-3.03V3.03C19.04 1.8 18.26 0 16.18 0h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06Z" fill="#C5C5C5"/>
+              </svg>
+              <span>Войти</span>
+            </a>
+            <a class="profile-menu__button profile-menu__button_registration" href="#">Регистрация</a>
+          </div>
         </div>
       </div>
 
@@ -80,12 +91,12 @@
           </li>
           <li class="promo__item promo__item_big">
             <ul class="promo-slider">
-              <li class="promo-slider__item promo-slider__item_drills">
+              <li class="promo-slider__item promo-slider__item_perfs">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
                 <a class="button" href="#">Открыть каталог</a>
               </li>
-              <li class="promo-slider__item promo-slider__item_perfs">
+              <li class="promo-slider__item promo-slider__item_drills">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
                 <a class="button" href="#">Открыть каталог</a>
@@ -176,20 +187,29 @@
           <p class="services__slogan">Хороший интернет-магазин отличается от плохого не только ценами! <br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="tabs">
-            <ul class="tabs__controls">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Кредит</a></li>
+            <ul class="tabs__controls-list">
+              <li>
+                <input id="tabs__control_delivery" class="tabs__control tabs__control_delivery visually-hidden" type="radio" name="tabs__controls" checked>
+                <label for="tabs__control_delivery">Доставка</label>
+              </li>
+              <li>
+                <input id="tabs__control_guarantee" class="tabs__control tabs__control_guarantee visually-hidden" type="radio" name="tabs__controls">
+                <label for="tabs__control_guarantee">Гарантия</label>
+              </li>
+              <li>
+                <input id="tabs__control_credit" class="tabs__control tabs__control_credit visually-hidden" type="radio" name="tabs__controls">
+                <label for="tabs__control_credit">Кредит</label>
+              </li>
             </ul>
             <ul class="tabs__content">
-              <li class="tabs__item">
+              <li class="tabs__item tabs__content_delivery">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо <br>
                   к вашему подъезду совершенно бесплатно! <br>
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!</p>
               </li>
-              <li class="tabs__item">
+              <li class="tabs__item tabs__content_guarantee">
                 <h3>Гарантия</h3>
                 <p>Если купленный у нас товар поломается или заискрит, <br>
                   а также в случае пожара, спровоцированного его <br>
@@ -197,7 +217,7 @@
                   гарантии. Мы обменяем сгоревший товар на новый. <br>
                   Дом уж восстановите как-нибудь сами.</p>
               </li>
-              <li class="tabs__item">
+              <li class="tabs__item tabs__content_credit">
                 <h3>Кредит</h3>
                 <p>Залезть в долговую яму стало проще! <br>
                   Кредитные консультанты придут вам на помощь.</p>
@@ -275,11 +295,11 @@
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
           </ul>
-          <div class="footer-bottom__dev-info">
+          <div class="footer-bottom__info">
             <p>Обратная связь: <br>
               <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-            <p>Разработано — <br>
+            <p class="footer-bottom__developer">Разработано — <br>
               <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
