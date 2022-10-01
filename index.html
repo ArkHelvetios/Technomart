@@ -91,17 +91,21 @@
           </li>
           <li class="promo__item promo__item_big">
             <ul class="promo-slider">
-              <li class="promo-slider__item promo-slider__item_perfs">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a class="button" href="#">Открыть каталог</a>
-              </li>
               <li class="promo-slider__item promo-slider__item_drills">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
                 <a class="button" href="#">Открыть каталог</a>
               </li>
+              <li class="promo-slider__item promo-slider__item_perfs promo-slider__item_current">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a class="button" href="#">Открыть каталог</a>
+              </li>
             </ul>
+            <div class="promo-slider__controls">
+              <button type="button" aria-label="Дрели"></button>
+              <button class="promo-slider__controls_current" type="button" aria-label="Перфораторы"></button>
+            </div>
           </li>
           <li class="promo__item promo__item_sales">
             <h3>Скидки 50%</h3>
@@ -328,24 +332,34 @@
       </div>
     </footer>
 
-    <section class="popup popup-form">
+    <section class="modal modal-form">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="popup-form__wrapper" action="#" method="get">
-        <label for="popup-form__name">Ваше имя:</label>
-        <input id="popup-form__name" name="popup-form_name" type="text" placeholder="Имя Фамилия">
-        <label for="popup-form__email">Ваш e-mail:</label>
-        <input id="popup-form__email" name="popup-form_email" type="email" placeholder="email@example.com">
-        <label for="popup-form__message">Текст письма:</label>
-        <textarea id="popup-form__message" name="popup-form_message" placeholder="В свободной форме"></textarea>
-        <button class="button" type="submit">Отправить</button>
+      <form class="modal-form__wrapper" action="#" method="get">
+        <div class="modal-form__fields-wrapper">
+          <label>
+            Ваше имя:
+            <input name="modal-form_name" type="text" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input name="modal-form_email" type="email" placeholder="email@example.com">
+          </label>
+          <label class="modal-form__big-field">
+            Текст письма:
+            <textarea name="modal-form_message" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <div class="modal-form__buttons-wrapper">
+          <button class="button" type="submit" area-la>Отправить</button>
+        </div>
       </form>
-      <button class="close-button" type="button">Закрыть</button>
+      <button class="modal__close-button" type="button" aria-label="Закрыть"></button>
     </section>
 
-    <section class="popup interactive-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!-- Здесь будет карта -->
-      <button class="close-button" type="button">Закрыть</button>
+      <button class="modal__close-button" type="button" aria-label="Закрыть"></button>
     </section>
 
   </body>
