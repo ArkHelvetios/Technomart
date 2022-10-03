@@ -1010,7 +1010,7 @@ a.header-top__order:active {
   display: block;
   width: 220px;
   height: 145px;
-  object-fit: content;
+  object-fit: contain;
 }
 
 .brands__list img:hover {
@@ -1199,6 +1199,7 @@ a.header-top__order:active {
 .contacts img {
   display: block;
   margin-bottom: 25px;
+  object-fit: cover;
 }
 
 .contacts .button {
