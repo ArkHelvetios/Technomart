@@ -252,10 +252,10 @@
           <h2>Контакты</h2>
           <p>Вы&nbsp;можете забрать товар сами, <br>
             заехав в&nbsp;наш офис:</p>
-          <a href="#">
+          <a class="link-modal-map" href="#">
             <img src="img/map.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" width="300" height="158">
           </a>
-          <a class="button" href="#">Заблудились? Напишите нам!</a>
+          <a class="button link-modal-form" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
 
@@ -358,9 +358,22 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <!-- Здесь будет карта -->
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUZaMqg9C" width="940" height="450" allowfullscreen></iframe>
       <button class="modal__close-button" type="button" aria-label="Закрыть"></button>
     </section>
+
+    <section class="modal modal-add-to-cart">
+      <div class="modal-add-to-cart__message-wrapper">
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="modal-add-to-cart__buttons-wrapper">
+        <a class="button" href="#">Оформить заказ</a>
+        <a class="button secondary-button" href="#">Продолжить покупки</a>
+      </div>
+      <button class="modal__close-button" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <script src="js/modal.min.js"></script>
 
   </body>
 </html>
